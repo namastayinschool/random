@@ -11,8 +11,8 @@ jewel.load("diamond.png");// image to use (must be stored in "random/bin/data" f
 
 	std::random_device rd;
 	std::mt19937 gen(rd());
-	std::uniform_int_distribution <> dis(1,1200); 
-	std::uniform_int_distribution <> dis2(1,980);
+	std::normal_distribution <> dis(1000,15); 
+	std::normal_distribution <> dis2(800,15);
 	
 	
 	for (int x =0; x<20; x++)
